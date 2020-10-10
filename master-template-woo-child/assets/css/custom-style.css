@@ -1,10 +1,147 @@
+.form-services .wpcf7 .form-control {
+  background: transparent !important;
+  border: 1px solid #A41A17 !important;
+  color: white !important;
+  font-family: "Sen", sans-serif !important;
+}
+.form-services .wpcf7 .form-control::placeholder {
+  color: #A41A17 !important;
+}
+.form-services .wpcf7 .wpcf7-acceptance .wpcf7-list-item {
+  margin: 0 !important;
+}
+.form-services-yellow .wpcf7 .form-control {
+  background: transparent !important;
+  border: 1px solid #f6b841 !important;
+  color: white !important;
+  font-family: "Sen", sans-serif !important;
+}
+.form-services-yellow .wpcf7 .form-control::placeholder {
+  color: #f6b841 !important;
+}
+.form-services-yellow .wpcf7 .wpcf7-acceptance .wpcf7-list-item {
+  margin: 0 !important;
+}
+.form-services-yellow .wpcf7 .wpcf7-acceptance .wpcf7-list-item-label {
+  color: white;
+}
+
+.sub-heading-section {
+  background-attachment: inherit !important;
+}
+
+.breadcrumbs {
+  font-family: "Sen", sans-serif !important;
+}
+.breadcrumbs a span {
+  font-family: "Sen", sans-serif !important;
+}
+
+.card-blog {
+  width: 100%;
+  min-height: 450px;
+  font-family: "Sen", sans-serif;
+  background-color: #f2f2f2;
+}
+.card-blog__img {
+  width: 100%;
+  height: 50%;
+}
+.card-blog__img__date {
+  z-index: 1;
+  color: white;
+  overflow: hidden;
+  top: -50px;
+  left: -50px;
+}
+.card-blog__img__date__bg {
+  width: 100%;
+}
+.card-blog__img__date__content {
+  top: 0;
+  left: 0;
+  font-size: 0.8em;
+}
+.card-blog__img__date hr {
+  border: 1px solid white;
+  width: 50%;
+}
+.card-blog__img__date__day {
+  font-size: 1.8em;
+  font-family: "Sen Bold", sans-serif;
+}
+.card-blog__img__figure {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px !important;
+  transition: all 0.4s;
+}
+.card-blog__img__caption {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.card-blog__img__caption .fas {
+  color: white;
+  transition: all 0.4s;
+}
+.card-blog__img__caption:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+.card-blog__img:hover .card-blog__img__figure {
+  filter: sepia(100%);
+}
+.card-blog__img:hover .fas {
+  color: #A41A17;
+}
+.card-blog__info__posted-on {
+  opacity: 0.3;
+}
+.card-blog__info__title {
+  font-size: 1.3em;
+  font-family: "Sen Bold", sans-serif;
+  line-height: 1.2em;
+  transition: all 0.4s;
+}
+.card-blog__info__title:hover {
+  color: #A41A17;
+}
+.card-blog__info__link {
+  transition: all 0.4s;
+}
+.card-blog__info__link:hover {
+  color: #A41A17;
+}
+.card-blog__info__desc {
+  font-family: "Sen", sans-serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", Sans-serif !important;
+}
+
+p, span {
+  font-family: "Sen", sans-serif !important;
+}
+
 .form-master {
   background-color: transparent !important;
   color: white !important;
 }
 
 body {
-  background-color: #000000 !important;
+  background: white !important;
+}
+
+.menu-item .nav-link {
+  font-family: "Sen Bold", sans-serif !important;
 }
 
 /*# sourceMappingURL=custom-style.css.map */

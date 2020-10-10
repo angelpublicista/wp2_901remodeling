@@ -1,1 +1,5 @@
-console.log('El custom js funciona')
+console.log('El custom js funciona');
+
+jQuery(function ($) {
+	$('.sub-heading-section').removeClass('opacity-layer'); 
+});
