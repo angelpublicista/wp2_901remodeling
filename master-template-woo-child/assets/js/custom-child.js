@@ -1,5 +1,5 @@
 console.log('El custom js funciona');
 
 jQuery(function ($) {
-	$('.sub-heading-section').removeClass('opacity-layer'); 
+	$('.page-template-master-page .sub-heading-section').removeClass('opacity-layer'); 
 });

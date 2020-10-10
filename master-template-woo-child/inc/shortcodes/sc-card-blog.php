@@ -37,7 +37,8 @@ if (!function_exists('card_blog_func')) {
                                         </span>
                                         </div>
                                     </div>
-                                    <img src="https://picsum.photos/1920/1080" alt="" class="card-blog__img__figure">
+                                    <!-- <img src="https://picsum.photos/1920/1080" alt="" class="card-blog__img__figure"> -->
+                                    <?php the_post_thumbnail('medium', array('class' => 'card-blog__img__figure')) ?>
                                     <a href="https://picsum.photos/1920/1080" data-lightbox="image-1" data-title="<?php the_title(); ?>" class="card-blog__img__caption position-absolute d-flex justify-content-center align-items-center">
                                     <i class="fas fa-images"></i>
                                     </a>
@@ -49,7 +50,7 @@ if (!function_exists('card_blog_func')) {
                                 <a href="<?php the_permalink(); ?>" class="card-blog__info__link"><h5 class="card-blog__info__title mt-1"><?php the_title(); ?></h5></a>
                                 <p class="card-blog__info__desc"><?php echo mb_strimwidth(get_the_excerpt(), 0, 60, "..."); ?></p>
                                 
-                                <a href="#" class="my-3 d-inline-block card-blog__info__button button-master principal-button rounded text-uppercase">View more</a>
+                                <a href="<?php the_permalink(); ?>" class="my-3 d-inline-block card-blog__info__button button-master principal-button rounded text-uppercase">View more</a>
                                 </div>
                             </div>
                         </div>
