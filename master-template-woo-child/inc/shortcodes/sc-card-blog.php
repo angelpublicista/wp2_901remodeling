@@ -37,9 +37,8 @@ if (!function_exists('card_blog_func')) {
                                         </span>
                                         </div>
                                     </div>
-                                    <!-- <img src="https://picsum.photos/1920/1080" alt="" class="card-blog__img__figure"> -->
                                     <?php the_post_thumbnail('medium', array('class' => 'card-blog__img__figure')) ?>
-                                    <a href="https://picsum.photos/1920/1080" data-lightbox="image-1" data-title="<?php the_title(); ?>" class="card-blog__img__caption position-absolute d-flex justify-content-center align-items-center">
+                                    <a href="<?php the_post_thumbnail_url('full') ?>" data-lightbox="image-1" data-title="<?php the_title(); ?>" class="card-blog__img__caption position-absolute d-flex justify-content-center align-items-center">
                                     <i class="fas fa-images"></i>
                                     </a>
                                 </div>
