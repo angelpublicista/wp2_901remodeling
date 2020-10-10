@@ -18,8 +18,8 @@ if (!function_exists('card_blog_func')) {
                     while ($post_query->have_posts()) {
                         $post_query->the_post();
                         ?>
-                        <div class="col-12 col-md-4 my-3">
-                        <div class="card-blog shadow-sm rounded mt-5">
+                        <div class="col-12 col-md-4 my-md-3">
+                        <div class="card-blog shadow-sm rounded mb-5">
                             <div class="card-blog__img position-relative">
                                     <div class="card-blog__img__date text-center position-absolute">
                                         <img src="http://localhost/remodeling-901/wp-content/uploads/2020/10/Rectangle-91.png" alt="" class="card-blog__img__date__bg position-relative">

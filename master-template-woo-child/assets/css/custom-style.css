@@ -45,7 +45,7 @@
 }
 .card-blog__img {
   width: 100%;
-  height: 50%;
+  height: 230px;
 }
 .card-blog__img__date {
   z-index: 1;
@@ -72,7 +72,7 @@
 }
 .card-blog__img__figure {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   object-fit: cover;
   border-radius: 5px 5px 0px 0px !important;
   transition: all 0.4s;
@@ -123,6 +123,17 @@
   font-family: "Sen", sans-serif;
 }
 
+@media (max-width: 480px) {
+  .card-blog {
+    min-height: 300px;
+  }
+  .card-blog__img {
+    height: 150px;
+  }
+  .card-blog__img__date {
+    display: none;
+  }
+}
 h1 {
   font-family: "Bebas Neue", Sans-serif !important;
 }
