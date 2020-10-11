@@ -23,6 +23,7 @@ require_once "inc/custom-post-types/cpt-projects.php";
 require_once "inc/shortcodes/sc-card-blog.php";
 require_once "inc/shortcodes/sc-carousel-projects.php";
 require_once "inc/shortcodes/sc-projects-filter.php";
+require_once "inc/shortcodes/sc-grid-services.php";
 
 require_once "inc/custom-taxonomies/tax-cat-projects.php";
 

@@ -1,0 +1,21 @@
+.rm-services
+  .rm-card-service
+    overflow: hidden
+    .rm-link-service
+      text-decoration: none
+    .rm-img-service
+      transition: all .4s
+      &:hover
+        transform: scale(1.1)
+    .rm-caption-card
+      bottom: 0
+      left: 0
+      width: 100%
+      h2
+        font-size: 1.5em
+        color: white
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, .3)
+
+@media (max-width: 480px)
+    .rm-caption-card
+        flex-wrap: wrap
