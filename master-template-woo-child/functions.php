@@ -20,16 +20,19 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles_child_theme' );
 
 require_once "inc/custom-post-types/cpt-services.php";
 require_once "inc/custom-post-types/cpt-projects.php";
+require_once "inc/custom-post-types/cpt-testimonials.php";
+
 require_once "inc/shortcodes/sc-card-blog.php";
 require_once "inc/shortcodes/sc-carousel-projects.php";
 require_once "inc/shortcodes/sc-projects-filter.php";
 require_once "inc/shortcodes/sc-grid-services.php";
+require_once "inc/shortcodes/sc-carousel-testimonials.php";
 
 require_once "inc/custom-taxonomies/tax-cat-projects.php";
 
 add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 function add_my_post_types_to_query( $query ) {
 	if ( (is_single() || is_home() || is_category() ) && $query->is_main_query() )
-		$query->set( 'post_type', array( 'post', 'services', 'projects' ) );
+		$query->set( 'post_type', array( 'post', 'services', 'projects', 'testimonials' ) );
 	return $query;
 }

@@ -21,5 +21,12 @@ jQuery(function ($) {
 		$itemShow = $(this).attr('data-item');
 		$('.slick-projects').slideUp();
 		$($itemShow).slideDown();
-	})	
+	})
+	
+	//Carousel Testimonials
+	$('.slick-testimonials').slick({
+		arrows: true,
+		slidesToShow: 3,
+		centerMode: true
+	});
 });

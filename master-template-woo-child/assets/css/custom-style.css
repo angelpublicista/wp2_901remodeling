@@ -218,6 +218,47 @@
     flex-wrap: wrap;
   }
 }
+.slick-testimonials {
+  box-sizing: border-box;
+  margin: 2em 0;
+}
+.slick-testimonials .item {
+  background-image: url(http://localhost/remodeling-901/wp-content/uploads/2020/10/rombo.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 2em;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  height: 350px;
+  outline: 0px;
+  color: white;
+  transition: all 0.4s;
+}
+.slick-testimonials .item p {
+  font-size: 0.6em !important;
+  padding: 0 0.5em;
+  color: white;
+}
+.slick-testimonials .item .name {
+  font-size: 0.8em;
+  width: 60%;
+  color: #f6b841;
+  line-height: 1.1em;
+}
+.slick-testimonials .item .stars-rating {
+  width: 50%;
+  font-size: 0.7em;
+  color: #f6b841;
+}
+.slick-testimonials .slick-current {
+  transform: scale(1.5);
+}
+
 h1 {
   font-family: "Bebas Neue", Sans-serif !important;
 }
