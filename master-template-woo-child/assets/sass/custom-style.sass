@@ -23,3 +23,29 @@ body
 .menu-item
     .nav-link
         font-family: $secondary-font--bold !important
+
+.diamond
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 50px
+    height: 50px
+    position: absolute
+    bottom: -25px
+    left: calc(50% - 25px) 
+    box-sizing: border-box
+    border-radius: 7px
+    transform: rotate(45deg)
+  &.white
+    &::before
+      background: white
+  &.p-color
+    &::before
+      background: $primary-color
+  &.s-color
+    &::before
+      background: $secondary-color
+  &.dark-color
+    &::before
+      background: #333333

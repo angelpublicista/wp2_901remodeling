@@ -258,6 +258,9 @@
 .slick-testimonials .slick-current {
   transform: scale(1.5);
 }
+.slick-testimonials .slick-arrow {
+  color: #A41A17;
+}
 
 h1 {
   font-family: "Bebas Neue", Sans-serif !important;
@@ -278,6 +281,34 @@ body {
 
 .menu-item .nav-link {
   font-family: "Sen Bold", sans-serif !important;
+}
+
+.diamond {
+  position: relative;
+}
+.diamond::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -25px;
+  left: calc(50% - 25px);
+  box-sizing: border-box;
+  border-radius: 7px;
+  transform: rotate(45deg);
+}
+.diamond.white::before {
+  background: white;
+}
+.diamond.p-color::before {
+  background: #A41A17;
+}
+.diamond.s-color::before {
+  background: #f6b841;
+}
+.diamond.dark-color::before {
+  background: #333333;
 }
 
 /*# sourceMappingURL=custom-style.css.map */

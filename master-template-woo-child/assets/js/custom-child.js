@@ -27,6 +27,23 @@ jQuery(function ($) {
 	$('.slick-testimonials').slick({
 		arrows: true,
 		slidesToShow: 3,
-		centerMode: true
+		centerMode: true,
+		prevArrow: '<button class="custom-slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></button>',
+		nextArrow: '<button class="custom-slick-next slick-arrow"><i class="fas fa-chevron-right"></i></button>',
+		responsive: [
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			}
+		]
 	});
 });
