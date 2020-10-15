@@ -58,7 +58,7 @@ if (!function_exists('card_blog_func')) {
                 }
 
                 wp_reset_query ();
-                ob_get_clean();
+                return ob_get_clean();
             ?>
         </div>
         <?php

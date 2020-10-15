@@ -7,20 +7,21 @@ jQuery(function ($) {
 		dots: true,
 		draggable: false,
 		prevArrow: '<button class="custom-slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></button>',
-		nextArrow: '<button class="custom-slick-next slick-arrow"><i class="fas fa-chevron-right"></i></button>'
+		nextArrow: '<button class="custom-slick-next slick-arrow"><i class="fas fa-chevron-right"></i></button>',
+		lazyLoad: "progressive"
 	});
 
 	//Handle carousel
-	$('.slick-projects').slideUp();
-	$('.slick-projects').first().slideDown();
-	$('.button-project').first().addClass('active');
+	// $('.slick-projects').slideUp();
+	$('.slick-projects').first().addClass('active');
+	// $('.button-project').first().addClass('active');
 	$('.button-project').click(function(e) {
 		e.preventDefault();
 		$('.button-project').removeClass('active');
 		$(this).addClass('active');
 		$itemShow = $(this).attr('data-item');
-		$('.slick-projects').slideUp();
-		$($itemShow).slideDown();
+		$('.slick-projects').removeClass('active');
+		$($itemShow).addClass('active');
 	})
 	
 	//Carousel Testimonials

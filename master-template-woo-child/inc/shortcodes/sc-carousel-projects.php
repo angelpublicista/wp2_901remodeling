@@ -30,7 +30,7 @@ if(!function_exists('carousel_projects_func')){
                 <?php while($projects_query->have_posts()): ?>
                     <?php $projects_query->the_post(); ?>
                     <!-- Content Projects -->
-                    <div class="item-project">
+                    <div class="item-project d-block">
                         <?php the_content(); ?>
                     </div>
                 <?php endwhile; ?>

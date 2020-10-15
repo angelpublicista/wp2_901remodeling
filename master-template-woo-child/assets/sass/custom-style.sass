@@ -6,6 +6,10 @@
 @import carousel-projects
 @import grid-services
 @import carousel-testimonials
+@import bottom-header
+@import top-footer
+@import bottom-footer
+@import single-post
 
 h1
     font-family: $primary-font !important
@@ -49,3 +53,14 @@ body
   &.dark-color
     &::before
       background: #333333
+
+@media (max-width: 480px)
+  .icon-mb-relative
+    position: relative !important
+    left: 0 !important
+    top: 0 !important
+    margin: 1em auto !important
+    &.icon-counter
+      margin-bottom: -85px !important
+    img
+      max-width: 80px
