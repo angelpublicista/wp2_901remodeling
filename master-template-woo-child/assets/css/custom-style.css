@@ -211,12 +211,17 @@
 .slick-theme .slick-dots li.slick-active button {
   background-color: #f6b841;
 }
-.slick-theme.slick-projects {
-  display: none;
+
+.cont-projects {
+  height: 430px;
+  overflow: hidden;
 }
-.slick-theme.slick-projects.active {
-  display: block;
-  visibility: visible !important;
+
+.slide-projects {
+  transition: all 0.4s;
+}
+.slide-projects .project {
+  height: 100%;
 }
 
 .filters .nav-link {

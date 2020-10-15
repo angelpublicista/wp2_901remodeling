@@ -12,17 +12,12 @@ jQuery(function ($) {
 	});
 
 	//Handle carousel
-	// $('.slick-projects').slideUp();
-	$('.slick-projects').first().addClass('active');
-	// $('.button-project').first().addClass('active');
-	$('.button-project').click(function(e) {
-		e.preventDefault();
+	$('.button-project').first().addClass('active');
+
+	$('.button-project').click(function() {
 		$('.button-project').removeClass('active');
 		$(this).addClass('active');
-		$itemShow = $(this).attr('data-item');
-		$('.slick-projects').removeClass('active');
-		$($itemShow).addClass('active');
-	})
+	});
 	
 	//Carousel Testimonials
 	$('.slick-testimonials').slick({
@@ -48,3 +43,23 @@ jQuery(function ($) {
 		]
 	});
 });
+
+const itemsCant = document.querySelectorAll('.cont-projects .project');
+const buttons = document.querySelectorAll('.button-project');
+const itemsContainer = document.querySelector('.slide-projects');
+
+for(const button of buttons){
+  button.addEventListener('click', function(e){
+      e.preventDefault();
+      const percent = this.dataset.pos;
+      itemsContainer.style.transform = `translateY(-${percent}%)`;
+  });
+  
+}
+
+$counter = 0
+for(const item of itemsCant){
+  $counter = $counter + 100
+  itemsContainer.style.height = $counter + "%";
+  
+}

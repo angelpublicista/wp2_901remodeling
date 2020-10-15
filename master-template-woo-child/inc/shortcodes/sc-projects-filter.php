@@ -14,18 +14,22 @@ if (!function_exists('projects_filter_func')) {
         
         //Start filters
         $string = '<ul class="nav filters mb-3">';
+        $pos = -100;
         foreach ($terms as $term) {
-            $string .= '<li class="nav-item"><a href="#" class="nav-link button-project pl-0 mr-1" data-item="#'.$term->slug.'">'.$term->name.'</a></li>';
+            $pos = $pos + 100;
+            $string .= '<li class="nav-item"><a href="#" class="nav-link button-project pl-0 mr-1" data-pos="'.$pos.'" data-item="#'.$term->slug.'">'.$term->name.'</a></li>';
         }
         $string .= '</ul>';
         //End filters
 
-        $string .= '<div class="row">';
-        foreach ($terms as $term){
-            $string .= '<div class="col-12">';
-            $string .= do_shortcode("[carousel_projects category_project=".$term->slug."]");
+        $string .= '<div class="cont-projects">';
+            $string .= '<div class="slide-projects">';
+            foreach ($terms as $term){
+                $string .= '<div class="project" >';
+                $string .= do_shortcode("[carousel_projects category_project=".$term->slug."]");
+                $string .= '</div>';
+            }
             $string .= '</div>';
-        }
         $string .= '</div>';
 
         return $string;
