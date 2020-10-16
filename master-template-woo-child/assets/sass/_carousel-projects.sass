@@ -1,35 +1,15 @@
-.slick-theme
+.slick-projects
     .slick-arrow
-        position: absolute
-        top: 45%
-        z-index: 1
-        border: none
-        background-color: transparent
-        color: white
-        font-size: 2em
-        transition: all .4s
+        opacity: .4
+        outline: 0px
+        font-size: 2em !important
+        &:hover
+            opacity: 1
     .custom-slick-next
-        right: -50px
+        right: 10px !important
     .custom-slick-prev
-        left: -50px
-    .slick-dots
-        z-index: 2
-        list-style: none !important
-        li
-            width: 40px
-            height: 5px
-            margin: 5px
-            button
-                width: 100%
-                height: 100%
-                background-color: white
-                padding: 2px
-                &::before
-                    content: ""
-                    position: relative
-            &.slick-active
-                button
-                    background-color: $secondary-color
+        left: 10px !important
+
 .cont-projects
     height: 430px
     overflow: hidden
@@ -37,8 +17,6 @@
     transition: all .4s
     .project
         height: 100%
-
-
 
 .filters
     .nav-link

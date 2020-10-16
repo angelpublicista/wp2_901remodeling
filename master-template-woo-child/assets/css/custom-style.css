@@ -173,43 +173,19 @@
   text-transform: uppercase;
 }
 
-.slick-theme .slick-arrow {
-  position: absolute;
-  top: 45%;
-  z-index: 1;
-  border: none;
-  background-color: transparent;
-  color: white;
-  font-size: 2em;
-  transition: all 0.4s;
+.slick-projects .slick-arrow {
+  opacity: 0.4;
+  outline: 0px;
+  font-size: 2em !important;
 }
-.slick-theme .custom-slick-next {
-  right: -50px;
+.slick-projects .slick-arrow:hover {
+  opacity: 1;
 }
-.slick-theme .custom-slick-prev {
-  left: -50px;
+.slick-projects .custom-slick-next {
+  right: 10px !important;
 }
-.slick-theme .slick-dots {
-  z-index: 2;
-  list-style: none !important;
-}
-.slick-theme .slick-dots li {
-  width: 40px;
-  height: 5px;
-  margin: 5px;
-}
-.slick-theme .slick-dots li button {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  padding: 2px;
-}
-.slick-theme .slick-dots li button::before {
-  content: "";
-  position: relative;
-}
-.slick-theme .slick-dots li.slick-active button {
-  background-color: #f6b841;
+.slick-projects .custom-slick-prev {
+  left: 10px !important;
 }
 
 .cont-projects {
@@ -263,6 +239,51 @@
     flex-wrap: wrap;
   }
 }
+.slick-theme {
+  position: relative;
+  width: 100%;
+}
+.slick-theme .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2em;
+  transition: all 0.4s;
+  font-size: 3em;
+}
+.slick-theme .custom-slick-next {
+  right: -50px;
+}
+.slick-theme .custom-slick-prev {
+  left: -50px;
+}
+.slick-theme .slick-dots {
+  z-index: 2;
+  list-style: none !important;
+}
+.slick-theme .slick-dots li {
+  width: 40px;
+  height: 5px;
+  margin: 5px;
+}
+.slick-theme .slick-dots li button {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+.slick-theme .slick-dots li button::before {
+  content: "";
+  position: relative;
+}
+.slick-theme .slick-dots li.slick-active button {
+  background-color: #f6b841;
+}
+
 .slick-testimonials {
   box-sizing: border-box;
   margin: 2em 0;
