@@ -19,8 +19,8 @@ if (!function_exists('card_blog_func')) {
                         $post_query->the_post();
                         ?>
                         <div class="col-12 col-md-4 my-md-3">
-                        <div class="card-blog shadow-sm rounded mb-5">
-                            <div class="card-blog__img position-relative">
+                            <div class="card-blog shadow-sm rounded mb-5">
+                                <div class="card-blog__img position-relative">
                                     <div class="card-blog__img__date text-center position-absolute">
                                         <img src="http://localhost/remodeling-901/wp-content/uploads/2020/10/Rectangle-91.png" alt="" class="card-blog__img__date__bg position-relative">
                                         
@@ -44,12 +44,12 @@ if (!function_exists('card_blog_func')) {
                                 </div>
                             
                                 <div class="card-blog__info p-3 px-4">
-                                <span class="card-blog__info__posted-on"> Posted on <?php the_date(); ?></span>
-                                
-                                <a href="<?php the_permalink(); ?>" class="card-blog__info__link"><h5 class="card-blog__info__title mt-1"><?php the_title(); ?></h5></a>
-                                <p class="card-blog__info__desc"><?php echo mb_strimwidth(get_the_excerpt(), 0, 60, "..."); ?></p>
-                                
-                                <a href="<?php the_permalink(); ?>" class="my-3 d-inline-block card-blog__info__button button-master principal-button rounded text-uppercase">View more</a>
+                                    <span class="card-blog__info__posted-on"> Posted on <?php the_date(); ?></span>
+                                    
+                                    <a href="<?php the_permalink(); ?>" class="card-blog__info__link"><h5 class="card-blog__info__title mt-1"><?php the_title(); ?></h5></a>
+                                    <p class="card-blog__info__desc"><?php echo mb_strimwidth(get_the_excerpt(), 0, 60, "..."); ?></p>
+                                    
+                                    <a href="<?php the_permalink(); ?>" class="my-3 d-inline-block card-blog__info__button button-master principal-button rounded text-uppercase">View more</a>
                                 </div>
                             </div>
                         </div>

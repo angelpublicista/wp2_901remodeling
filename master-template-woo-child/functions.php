@@ -18,6 +18,8 @@ function enqueue_styles_child_theme() {
 
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_child_theme' );
 
+require_once "inc/helpers.php";
+
 require_once "inc/custom-post-types/cpt-services.php";
 require_once "inc/custom-post-types/cpt-projects.php";
 require_once "inc/custom-post-types/cpt-testimonials.php";

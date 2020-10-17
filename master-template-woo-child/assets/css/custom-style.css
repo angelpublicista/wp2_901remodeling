@@ -400,6 +400,43 @@
   display: none;
 }
 
+.sidebar-single li, .sidebar-col li {
+  transition: all 0.4s;
+}
+.sidebar-single li:hover, .sidebar-col li:hover {
+  padding-left: 0.5em;
+}
+.sidebar-single li a:hover, .sidebar-col li a:hover {
+  color: #A41A17 !important;
+}
+
+.box-menu-nav-mobile .nav-link {
+  color: #A41A17;
+}
+
+.archive .sub-heading-section {
+  background-attachment: initial;
+}
+.archive .entry-category h1 {
+  font-size: 3em !important;
+}
+.archive .entry-category h1 span {
+  font-family: "Bebas Neue", Sans-serif !important;
+}
+.archive .breadcrumbs a {
+  color: #A41A17;
+}
+.archive .post-filters-cont {
+  margin-top: 2em;
+}
+.archive .img-not-found {
+  max-width: 300px;
+}
+
+.sidebar-col a {
+  color: black;
+}
+
 h1 {
   font-family: "Bebas Neue", Sans-serif !important;
 }
