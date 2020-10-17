@@ -9,7 +9,7 @@
 global $geniorama;
 ?>
 
-<form action="" role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
+<form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
     <div class="form-group row">
         <div class="col-12 col-md-10 p-0">
             <input type="search" placeholder="<?php echo ($geniorama['opt-text-placeholder-searchbar']) ? $geniorama['opt-text-placeholder-searchbar'] : "Buscar" ?>" class="form-control search-input" value="<?php echo get_search_query(); ?>" name="s">

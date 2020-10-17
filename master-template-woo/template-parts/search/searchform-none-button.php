@@ -9,7 +9,7 @@
 global $geniorama;
 ?>
 
-<form action="" role="search" method="get" class="search-form" action="<?php site_url(); ?>">
+<form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
     <label for="input-search"><p class="mb-0"><?php if ($geniorama['opt-text-label-searchbar']) {
         echo $geniorama['opt-text-label-searchbar'];
     } ?></p></label>
