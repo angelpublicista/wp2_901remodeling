@@ -46,11 +46,11 @@ if(!function_exists('grid_services_func')){
                         <!-- Content Services -->
                         <div class="col-12 <?php echo $cols; ?>">
                             <div class="rm-card-service position-relative rounded shadow mb-4">
-                                <a href="<?php the_permalink(); ?>" class="rm-link-service d-block">
+                                <a href="<?php the_permalink(); ?>/?service=<?php the_title(); ?>" class="rm-link-service d-block">
                                     <?php the_post_thumbnail( 'full', array('class' => 'img-fluid rm-img-service') ); ?>
                                     <div class="rm-caption-card position-absolute d-flex justify-content-between align-items-center p-2">
                                         <h2><?php the_title(); ?></h2>
-                                        <a href="<?php the_permalink(); ?>" class="rm-service-button button-master secondary-button rounded"><?php echo $atts['button-text']; ?></a>
+                                        <a href="<?php the_permalink(); ?>/?service=<?php the_title(); ?>" class="rm-service-button button-master secondary-button rounded"><?php echo $atts['button-text']; ?></a>
                                     </div>
                                 </a>
                             </div>
