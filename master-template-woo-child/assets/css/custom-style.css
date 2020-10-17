@@ -429,12 +429,32 @@
 .archive .post-filters-cont {
   margin-top: 2em;
 }
-.archive .img-not-found {
-  max-width: 300px;
+
+.img-not-found {
+  max-width: 250px;
 }
 
 .sidebar-col a {
   color: black;
+}
+
+.content-search .card {
+  color: black;
+  transition: all 0.4s;
+}
+.content-search .card-title {
+  line-height: 1.2em;
+  font-family: "Sen Bold", sans-serif;
+  transition: all 0.4s;
+}
+.content-search .card-date {
+  color: #959595;
+}
+.content-search .card:hover {
+  margin-left: 10px;
+}
+.content-search .card:hover .card-title {
+  color: #A41A17;
 }
 
 h1 {
